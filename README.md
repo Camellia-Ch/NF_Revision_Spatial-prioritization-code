@@ -11,4 +11,6 @@ Phase 2: Multi-Objective Priority Ranking. In this phase, we perform multi-crite
 
 Note 1: Original data = files1 = list.files(pattern = ".tif$") 
 
-Note 2: software's license for use is RStudio (https://posit.co/download/rstudio-desktop/).
+Note 2: Priorities refer to the highest (level: 1) to lowest (level: 100) valuable areas for Camellia replacement to achieve benefits.
+
+Note 3: software's license for use is RStudio (https://posit.co/download/rstudio-desktop/).
