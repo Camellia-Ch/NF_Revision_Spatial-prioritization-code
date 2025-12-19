@@ -1,8 +1,8 @@
-# Supplementary Information3_Spatial prioritization code of Optimizing Comprehensive objective1-5 (GHG EMISSION, WATER USE, LAND USE, PESTICIDE USE, AND FARMER INCOME)
+# Supplementary Information4_Spatial prioritization code of Optimizing Comprehensive objective1-5 (GHG EMISSION, WATER USE, LAND USE, PESTICIDE USE, AND FARMER INCOME)
 
 # Step 1
 library(raster)
-setwd('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Original data')
+setwd('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Original data')
 list.files()
 files1 = list.files(pattern = ".tif$")
 length(files1)
@@ -57,14 +57,14 @@ for(i in 1:number_iterations){
   extent(r_new) <- extent(r)
 
 output_filename <- paste0("topPercentage", i, "_scenario1_objective1-5_CamelliaReplacingPrioritization_CamelliaPriceRemainsUnchaged.tif")
-output_path <- file.path('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing objective1-5 simultaneously_prioritization/', output_filename)
+output_path <- file.path('G:/20251211_Supplementary Information4_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing objective1-5 simultaneously_prioritization/', output_filename)
 writeRaster(r_new, filename = output_path, format = "GTiff", overwrite = TRUE)
 }
 
 
 # Step 2
 library(raster)
-setwd('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing objective1-5 simultaneously_prioritization')
+setwd('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing objective1-5 simultaneously_prioritization')
 list.files()
 files1 = list.files(pattern = ".tif$")
 length(files1)
@@ -103,11 +103,11 @@ writeRaster(r_reversed,
 
 
 
-# Supplementary Information3_Spatial prioritization code of Optimizing Comprehensive objective1-4 (GHG EMISSION, WATER USE, LAND USE, AND PESTICIDE USE)
+# Supplementary Information4_Spatial prioritization code of Optimizing Comprehensive objective1-4 (GHG EMISSION, WATER USE, LAND USE, AND PESTICIDE USE)
 
 # Step 1
 library(raster)
-setwd('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Original data')
+setwd('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Original data')
 list.files()
 files1 = list.files(pattern = ".tif$")
 length(files1)
@@ -160,7 +160,7 @@ for(i in 1:number_iterations){
   extent(r_new) <- extent(r)
 
 output_filename <- paste0("topPercentage", i, "_scenario1_comprehensiveobjective1to4_CamelliaReplacingPrioritization.tif")
-output_path <- file.path('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing objective1-4 simultaneously_prioritization/', output_filename)
+output_path <- file.path('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing objective1-4 simultaneously_prioritization/', output_filename)
 writeRaster(r_new, filename = output_path, format = "GTiff", overwrite = TRUE)
 }
 
@@ -169,7 +169,7 @@ writeRaster(r_new, filename = output_path, format = "GTiff", overwrite = TRUE)
 
 # Step 2
 library(raster)
-setwd('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing objective1-4 simultaneously_prioritization')
+setwd('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing objective1-4 simultaneously_prioritization')
 list.files()
 files1 = list.files(pattern = ".tif$")
 length(files1)
@@ -210,11 +210,11 @@ writeRaster(r_reversed,
 
 
 
-# Supplementary Information3_Spatial prioritization code of Optimizing individual objective1 (GHG EMISSION)
+# Supplementary Information4_Spatial prioritization code of Optimizing individual objective1 (GHG EMISSION)
 
 # Step 1
 library(raster)
-setwd('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Original data')
+setwd('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Original data')
 list.files()
 files1 = list.files(pattern = ".tif$")
 length(files1)
@@ -251,14 +251,14 @@ for(i in 1:number_iterations){
   extent(r_new) <- extent(r)
 
 output_filename <- paste0("topPercentage", i, "_scenario1_objective1_CamelliaReplacingPrioritization.tif")
-output_path <- file.path('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective1_prioritization/', output_filename)
+output_path <- file.path('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective1_prioritization/', output_filename)
 writeRaster(r_new, filename = output_path, format = "GTiff", overwrite = TRUE)
 }
 
 
 # Step 2
 library(raster)
-setwd('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective1_prioritization')
+setwd('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective1_prioritization')
 list.files()
 files1 = list.files(pattern = ".tif$")
 length(files1)
@@ -298,11 +298,11 @@ writeRaster(r_reversed,
 
 
 
-# Supplementary Information3_Spatial prioritization code of Optimizing individual objective2 (WATER USE)
+# Supplementary Information4_Spatial prioritization code of Optimizing individual objective2 (WATER USE)
 
 # Step 1
 library(raster)
-setwd('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Original data')
+setwd('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Original data')
 list.files()
 files1 = list.files(pattern = ".tif$")
 length(files1)
@@ -339,14 +339,14 @@ for(i in 1:number_iterations){
   extent(r_new) <- extent(r)
 
   output_filename <- paste0("topPercentage", i, "_scenario1_objective2_CamelliaReplacingPrioritization.tif")
-  output_path <- file.path('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective2_prioritization/', output_filename)
+  output_path <- file.path('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective2_prioritization/', output_filename)
   writeRaster(r_new, filename = output_path, format = "GTiff", overwrite = TRUE)
 }
 
 
 # Step 2
 library(raster)
-setwd('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective2_prioritization')
+setwd('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective2_prioritization')
 list.files()
 files1 = list.files(pattern = ".tif$")
 length(files1)
@@ -389,11 +389,11 @@ writeRaster(r_reversed,
 
 
 
-# Supplementary Information3_Spatial prioritization code of Optimizing individual objective3 (LAND USE)
+# Supplementary Information4_Spatial prioritization code of Optimizing individual objective3 (LAND USE)
 
 # Step 1
 library(raster)
-setwd('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Original data')
+setwd('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Original data')
 list.files()
 files1 = list.files(pattern = ".tif$")
 length(files1)
@@ -429,14 +429,14 @@ for(i in 1:number_iterations){
   extent(r_new) <- extent(r)
 
   output_filename <- paste0("topPercentage", i, "_scenario1_objective3_CamelliaReplacingPrioritization.tif")
-  output_path <- file.path('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective3_prioritization/', output_filename)
+  output_path <- file.path('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective3_prioritization/', output_filename)
   writeRaster(r_new, filename = output_path, format = "GTiff", overwrite = TRUE)
 }
 
 
 # Step 2
 library(raster)
-setwd('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective3_prioritization')
+setwd('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective3_prioritization')
 list.files()
 files1 = list.files(pattern = ".tif$")
 length(files1)
@@ -475,11 +475,11 @@ writeRaster(r_reversed,
 
 
 
-# Supplementary Information3_Spatial prioritization code of Optimizing individual objective4 (PESTICIDE USE)
+# Supplementary Information4_Spatial prioritization code of Optimizing individual objective4 (PESTICIDE USE)
 
 # Step 1
 library(raster)
-setwd('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Original data')
+setwd('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Original data')
 list.files()
 files1 = list.files(pattern = ".tif$")
 length(files1)
@@ -515,14 +515,14 @@ for(i in 1:number_iterations){
   extent(r_new) <- extent(r)
 
   output_filename <- paste0("topPercentage", i, "_scenario1_objective4_CamelliaReplacingPrioritization.tif")
-  output_path <- file.path('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective4_prioritization/', output_filename)
+  output_path <- file.path('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective4_prioritization/', output_filename)
   writeRaster(r_new, filename = output_path, format = "GTiff", overwrite = TRUE)
 }
 
 
 # Step 2
 library(raster)
-setwd('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective4_prioritization')
+setwd('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective4_prioritization')
 list.files()
 files1 = list.files(pattern = ".tif$")
 length(files1)
@@ -561,11 +561,11 @@ writeRaster(r_reversed,
 
 
 
-# Supplementary Information3_Spatial prioritization code of Optimizing individual objective5 (FARMER INCOME of Camellia Price Remains Unchaged)
+# Supplementary Information4_Spatial prioritization code of Optimizing individual objective5 (FARMER INCOME of Camellia Price Remains Unchaged)
 
 # Step 1
 library(raster)
-setwd('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Original data')
+setwd('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Original data')
 list.files()
 files1 = list.files(pattern = ".tif$")
 length(files1)
@@ -601,7 +601,7 @@ for(i in 1:number_iterations){
   extent(r_new) <- extent(r)
 
   output_filename <- paste0("topPercentage", i, "_scenario1_objective5_CamelliaReplacingPrioritization_CamelliaPriceRemainsUnchaged.tif")
-  output_path <- file.path('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective5_prioritization/', output_filename)
+  output_path <- file.path('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective5_prioritization/', output_filename)
   writeRaster(r_new, filename = output_path, format = "GTiff", overwrite = TRUE)
 }
 
@@ -609,7 +609,7 @@ for(i in 1:number_iterations){
 
 # Step 2
 library(raster)
-setwd('G:/20251211_Supplementary Information3_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective5_prioritization')
+setwd('G:/20251220_Supplementary Information4_Spatial-prioritization-code_Output results/Result_Scenario1_Optimizing individual objective5_prioritization')
 list.files()
 files1 = list.files(pattern = ".tif$")
 length(files1)
